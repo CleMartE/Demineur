@@ -1,6 +1,74 @@
 #include<header.h>
 
+#include <stdio.h>
+
+char pion (int p){
+	char est;
+	if(p==0){
+		est=' ';
+	}
+	else if(p==1){
+		est='X';
+	}
+	else if(p==2){
+		est='_';
+	}
+	else if(p==3){
+		est='O';
+	}
+	else{
+		est='E';
+	}
+}
+
+
+void affiche_plateau(int tableau[10][10]){
+	int i,j;
+	printf("   ");
+	for (char k='A';k<='J';k++){
+	    printf("%c ",k);
+	}
+	printf("\n");
+	printf("   _ _ _ _ _ _ _ _ _ _ \n");
+    
+	for(j=0;j<10;j++){
+    		if (j==9){
+        		printf("%d|",j+1);
+		}
+    		else{
+        		printf("%d |",j+1);
+		}
+    		for(i=0;i<10;i++){
+        		if (j==9){
+          			printf("%c ", pion(tableau[j][i]));
+        		}
+        		else{
+            			printf("%c ", pion(tableau[j][i]));
+        		}
+		}
+
+        	printf("\n");
+    	}
+}
+
+
 int main(){
-    printf("Test");
-return 0;
+	int plateau_joueur[10][10];
+	int plateau_adv[10][10];
+	int i,j,p;
+
+	for(j=0;j<=9;j++){
+        	for(i=0;i<=9;i++){
+        		plateau_joueur[j][i]=0;
+        	}
+    	}
+    	for(j=0;j<=9;j++){
+        	for(i=0;i<=9;i++){
+        		plateau_adv[j][i]=0;
+        	}
+    	}
+	affiche_plateau(plateau_joueur);
+    	printf("\n");
+	affiche_plateau(plateau_adv);
+	
 }
