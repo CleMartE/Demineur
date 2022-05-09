@@ -1,5 +1,6 @@
 #include <Header.h>
 
-main(){
+int main(){
 printf("Test");
+return 0;
 }
