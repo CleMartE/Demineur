@@ -1,4 +1,4 @@
-Bienvenue le Démineur de Clément Martins & Mathieu Briquet appartenant au groupe 9 de la classe Supméca !
+Bienvenue sur le Démineur de Clément Martins & Mathieu Briquet appartenant au groupe 9 de la classe Supméca !
 
 Pour choisir l'option : 
 Saisir le nombre qui précède l'option puis Appuyer sur "Entrée"
