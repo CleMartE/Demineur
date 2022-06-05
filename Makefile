@@ -20,6 +20,3 @@ showTab.o: showTab.c header.h
 
 exec :main.o gameMode.o GestionGrid.o GestionTurn.o HighScore.o showTab.o tileDiscovery.o
 	gcc $^ -o $@
-
-clear:
-  rm *.o
