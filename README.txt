@@ -1,3 +1,5 @@
+Bienvenue le Démineur de Clément Martins & Mathieu Briquet !
+
 Pour choisir l'option : 
 Saisir le nombre qui précède l'option puis Appuyer sur "Entrée"
 
